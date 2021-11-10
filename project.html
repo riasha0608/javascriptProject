@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="project.css" rel="stylesheet" type="text/css">
+    <title>Project</title>
+    
+    <style>
+        #titleAboutDanceStyles {
+            font-family: helvetica, arial, sans-serif;
+            text-align: center;
+            color:antiquewhite;
+        }
+
+        #showImageButton, #hideImageButton{
+            margin: 0 auto;
+            margin-top:10px;
+            margin-left:10px;
+            background-color:aquamarine;
+        }
+
+        #disappearButton {
+            margin-top:10px;
+            text-align: center;
+        }
+
+        #balletTextbox {
+            width:250px;
+            border-style:dotted;
+            border-color:black;
+            text-align: center;
+        }
+
+        #balletTitle {
+            margin-top:30px;
+            text-align:center;
+            opacity: 1.0;
+        }
+    </style>
+</head>
+<body>
+    <h1 id = "titleAboutDanceStyles">Learn all about dance styles!</h1>
+        <div id="danceStyles">
+        <div id = "balletTextbox">
+            
+            <p id= "balletTitle">Ballet!</p>
+            <button id = "showImageButton">Show ballerinas</button>
+            <br>
+            <button id = "hideImageButton">Hide ballerinas</button>
+            <br>
+            <button id = "disappearButton">Click to make the title above disappear!</button>
+            <img id = "imageOfBallerinas" src = "images/ballet.jpg">
+        </div>
+        <div id = "indianClassicalTextbox">
+            
+            <p id= "balletTitle">Ballet!</p>
+            <button id = "showImageButton">Show ballerinas</button>
+            <br>
+            <button id = "hideImageButton">Hide ballerinas</button>
+            <br>
+            <button id = "disappearButton">Click to make the title above disappear!</button>
+            <img id = "imageOfBallerinas" src = "images/ballet.jpg">
+        </div>
+    </div>
+    <script>
+        let buttonDisappear = document.getElementById("disappearButton");
+        let imageAppearButton = document.getElementById("showImageButton");
+        let imageHideButton = document.getElementById("hideImageButton");
+        let balletPar = document.querySelector(".balletTitle");
+        var stateTracker = 1;
+        buttonDisappear.addEventListener("click", function(event) {
+            // alert("I'm here");
+            var balletTitleElement = document.getElementById("balletTitle");
+            if (stateTracker == 1){
+                balletTitleElement.style.opacity = "0.0";
+                document.getElementById("disappearButton").innerHTML = "Show the title!";
+                stateTracker = 2;
+            }
+            else if (stateTracker == 2){
+                balletTitleElement.style.opacity = "1.0";
+                document.getElementById("disappearButton").innerHTML = "Click to make the title above disappear!";
+                stateTracker = 1;
+            }
+        });
+        imageAppearButton.addEventListener("click", function(event) {
+            // alert("I'm here");
+            var balletImgElement = document.getElementById("imageOfBallerinas");
+            balletImgElement.style.display = "initial";
+        });
+        imageHideButton.addEventListener("click", function(event) {
+            // alert("I'm here");
+            var balletImgElement = document.getElementById("imageOfBallerinas");
+            balletImgElement.style.display = "none";
+        });
+    </script>
+</body>
+
+
+</html>
