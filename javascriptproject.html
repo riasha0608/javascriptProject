@@ -4,11 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="project.css" rel="stylesheet" type="text/css">
+    <link href="styles/javascriptproject.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Mochiy+Pop+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Mochiy+Pop+One&family=Mohave:wght@300&display=swap" rel="stylesheet">
     <title>Project</title>
 </head>
-<body>
-    <h1 id = "titleAboutDanceStyles">Learn all about dance styles!</h1>
+<body id = "body">
+    <h1 id = "titleAboutDanceStyles">Dance styles!</h1>
     <div id="danceStyles">
         <div id = "balletTextbox">
             <p id= "balletTitle">Ballet!</p>
@@ -47,6 +51,35 @@
     <script type = "text/javascript" src="ballerina.js"></script>
     <script type = "text/javascript" src="bharatnatyam.js"></script>
     <script type = "text/javascript" src="hipHop.js"></script>
+    <script>
+        // setInterval(
+        // function () {
+        //     var randomColor = Math.floor(Math.random()*16777215).toString(16);
+        //     document.body.style.backgroundColor = "#"+randomColor;
+        // },1000);
+        // 
+        var colorTracker = 1;
+        setInterval(
+            function() {
+                if (colorTracker == 1) {
+                    document.body.style.backgroundColor = "skyblue";
+                    colorTracker = 2;
+                }
+                else if (colorTracker == 2) {
+                    document.body.style.backgroundColor = "darkorange";
+                    colorTracker = 3;
+                }
+                else if (colorTracker == 3) {
+                    document.body.style.backgroundColor = "teal";
+                    colorTracker = 4;
+                }
+                else if (colorTracker == 4) {
+                    document.body.style.backgroundColor = "mediumpurple";
+                    colorTracker = 1;
+                }
+            }, 1000);
+        
+        </script>
 </body>
 
 

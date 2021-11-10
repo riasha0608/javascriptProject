@@ -1,10 +1,16 @@
 body {
     background-color:rgb(118, 161, 189);
-    
+}
+
+p {
+    color:white;
+    font-weight: bold;
+    font-size: 18px;
+    font-family: 'IM Fell English SC', serif;
 }
 
 #titleAboutDanceStyles {
-    font-family: helvetica, arial, sans-serif;
+    font-family: 'Julius Sans One', sans-serif;
     text-align: center;
     color:antiquewhite;
 }
@@ -16,6 +22,7 @@ body {
 }
 
 #showImageButton, #hideImageButton, #showClassicalVideoButton, #hideClassicalVideoButton, #showHipHopImage, #hideHipHopImage{
+    font-family: 'Mochiy Pop One', sans-serif;
     margin: 0 auto;
     margin-top:10px;
     margin-left:10px;
@@ -28,6 +35,7 @@ body {
 
 #disappearButton, #disappearClassicalTitleButton, #disappearHipHopTitleButton {
     margin-top:10px;
+    font-family: 'Mohave', sans-serif;
     text-align: center;
 }
 
