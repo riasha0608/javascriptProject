@@ -1,3 +1,49 @@
 body {
     background-color:rgb(118, 161, 189);
+    
+}
+
+#titleAboutDanceStyles {
+    font-family: helvetica, arial, sans-serif;
+    text-align: center;
+    color:antiquewhite;
+}
+
+#danceStyles {
+    display: flex;
+    flex-direction: row;
+    gap:180px;
+}
+
+#showImageButton, #hideImageButton, #showClassicalVideoButton, #hideClassicalVideoButton, #showHipHopImage, #hideHipHopImage{
+    margin: 0 auto;
+    margin-top:10px;
+    margin-left:10px;
+    background-color:aquamarine;
+}
+
+#showClassicalVideoButton {
+    margin-left:0px;
+}
+
+#disappearButton, #disappearClassicalTitleButton, #disappearHipHopTitleButton {
+    margin-top:10px;
+    text-align: center;
+}
+
+#balletTextbox, #indianClassicalTextbox, #hipHopTextbox{
+    width:300px;
+    border-style:dotted;
+    border-color:white;
+    text-align: center;
+}
+
+#balletTitle, #indianClassicalTitle, #hipHopTitle{
+    margin-top:30px;
+    text-align:center;
+    opacity: 1.0;
+}
+
+#indianClassicalVideo {
+    margin-bottom:10px;
 }
