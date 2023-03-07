@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles/javascriptproject.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Mochiy+Pop+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Mochiy+Pop+One&family=Mohave:wght@300&display=swap" rel="stylesheet">
+    <title>Project</title>
+</head>
+<body id = "body">
+    <h1 id = "titleAboutDanceStyles">Dance styles!</h1>
+    <div id="danceStyles">
+        <div id = "balletTextbox">
+            <p id= "balletTitle">Ballet!</p>
+            <button id = "showImageButton">Show ballerinas</button>
+            <br>
+            <button id = "hideImageButton">Hide ballerinas</button>
+            <br>
+            <button id = "disappearButton">Click to make the title above disappear!</button>
+            <p>Hover over image for a surprise :)</p>
+            <img id = "imageOfBallerinas" width = 250 height="200" src = "images/ballet1.jpg">
+            <br>
+            <a id = "ballerinaVideo" href="https://www.youtube.com/watch?v=zV1qLYukTH8">Watch a beautiful ballet performance!</a>
+        </div>
+        <div id = "indianClassicalTextbox">
+            <p id= "indianClassicalTitle">Bharatanatyam! (Indian classical)</p>
+            <button id = "showClassicalVideoButton">Click to see a clip of my team and I dancing!</button>
+            <br>
+            <button id = "hideClassicalVideoButton">Hide the video</button>
+            <br>
+            <button id = "disappearClassicalTitleButton">Click to make the title above disappear!</button>
+            <video id = "indianClassicalVideo" width = 250 height="250" controls><source src="videos/indianClassicalVideo.mp4" type = "video/MP4"></video>
+        </div>
+        <div id = "hipHopTextbox">
+            <p id= "hipHopTitle">Hip Hop!</p>
+            <button id = "showHipHopImage">Show the Hip-Hop dancers!</button>
+            <br>
+            <button id = "hideHipHopImage">Hide the Hip-Hop dancers!</button>
+            <br>
+            <button id = "disappearHipHopTitleButton">Click to make the title above disappear!</button>
+            <p>Hover over image for a surprise :)</p>
+            <img id = "hipHopImage" width = 250 height="200" src = "images/hiphop1.jpg">
+            <br>
+            <a id = "hipHopVideo" href="https://www.youtube.com/watch?v=th9dk2CbWP4">Watch a Hip-Hop competition!</a>
+        </div>
+    </div>
+    <script type = "text/javascript" src="ballerina.js"></script>
+    <script type = "text/javascript" src="bharatnatyam.js"></script>
+    <script type = "text/javascript" src="hipHop.js"></script>
+    <script>
+        // setInterval(
+        // function () {
+        //     var randomColor = Math.floor(Math.random()*16777215).toString(16);
+        //     document.body.style.backgroundColor = "#"+randomColor;
+        // },1000);
+        // 
+        var colorTracker = 1;
+        setInterval(
+            function() {
+                if (colorTracker == 1) {
+                    document.body.style.backgroundColor = "skyblue";
+                    colorTracker = 2;
+                }
+                else if (colorTracker == 2) {
+                    document.body.style.backgroundColor = "darkorange";
+                    colorTracker = 3;
+                }
+                else if (colorTracker == 3) {
+                    document.body.style.backgroundColor = "teal";
+                    colorTracker = 4;
+                }
+                else if (colorTracker == 4) {
+                    document.body.style.backgroundColor = "mediumpurple";
+                    colorTracker = 1;
+                }
+            }, 1000);
+        
+        </script>
+</body>
+
+
+</html>
